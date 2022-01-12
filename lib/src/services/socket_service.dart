@@ -13,7 +13,7 @@ class SocketService with ChangeNotifier {
     _initConfig();
   }
   _initConfig() {
-    this._socket = IO.io('http://localhost:3000/', {
+    this._socket = IO.io('https://flutter-socket-server-spad.herokuapp.com/', {
       'transports': ['websocket'],
       'autoConnect': true
     });
